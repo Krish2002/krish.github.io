@@ -1,199 +1,2152 @@
-<!--<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Blog - Krish Sharma</title>
-    <meta name="author" content="Krish Sharma">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        line-height: 1.6;
-        color: #333;
-        background-color: #f9f9f9;
-      }
-      .blog-header {
-        text-align: center;
-        margin-bottom: 40px;
-        padding: 20px 0;
-        border-bottom: 1px solid #eee;
-      }
-      .blog-title {
-        font-size: 2.2em;
-        color: #2d3748;
-        margin-bottom: 10px;
-        font-weight: 500;
-      }
-      .blog-subtitle {
-        color: #666;
-        font-size: 1.1em;
-        margin-bottom: 30px;
-        font-weight: 300;
-      }
-      .blog-post {
-        margin-bottom: 40px;
-        padding: 30px;
-        border-radius: 8px;
-        background-color: #fff;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        transition: transform 0.2s ease;
-      }
-      .blog-post:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-      }
-      .post-title {
-        font-size: 1.8em;
-        color: #2d3748;
-        margin-bottom: 10px;
-        font-weight: 500;
-      }
-      .post-date {
-        color: #888;
-        font-size: 0.9em;
-        margin-bottom: 20px;
-        font-style: italic;
-      }
-      .post-content {
-        color: #4a5568;
-        margin-bottom: 20px;
-        line-height: 1.8;
-      }
-      .post-content p {
-        margin-bottom: 1.5em;
-      }
-      .post-content h2 {
-        font-size: 1.5em;
-        color: #2d3748;
-        margin: 1.5em 0 0.8em;
-        font-weight: 500;
-      }
-      .post-content blockquote {
-        border-left: 3px solid #e2e8f0;
-        padding-left: 15px;
-        margin: 1.5em 0;
-        color: #666;
-        font-style: italic;
-      }
-      .post-content blockquote p {
-        margin-bottom: 0.5em;
-      }
-      .post-content blockquote cite {
-        display: block;
-        text-align: right;
-        color: #888;
-        font-size: 0.9em;
-        margin-top: 0.5em;
-      }
-      .read-more {
-        display: inline-block;
-        color: #2c5282;
-        text-decoration: none;
-        font-weight: 500;
-        transition: color 0.2s ease;
-      }
-      .read-more:hover {
-        color: #1a365d;
-      }
-      .back-link {
-        display: inline-block;
-        margin-top: 30px;
-        color: #2c5282;
-        text-decoration: none;
-        border: 1px solid #e2e8f0;
-        padding: 8px 16px;
-        border-radius: 4px;
-        transition: all 0.2s ease;
-      }
-      .back-link:hover {
-        background-color: #f7fafc;
-        border-color: #2c5282;
-      }
-      .empty-state {
-        text-align: center;
-        padding: 40px;
-        color: #666;
-      }
-      .empty-state i {
-        font-size: 3em;
-        color: #cbd5e0;
-        margin-bottom: 20px;
-      }
-      @media (max-width: 768px) {
-        body {
-          padding: 15px;
-        }
-        .blog-title {
-          font-size: 2em;
-        }
-        .blog-post {
-          padding: 20px;
-        }
-        .post-title {
-          font-size: 1.5em;
-        }
-      }
-    </style>
-  </head>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>The Illusion of Learning - Krish Sharma</title>
+        <meta name="author" content="Krish Sharma" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="shortcut icon"
+            href="images/favicon/favicon.ico"
+            type="image/x-icon"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            :root {
+                --bg-primary: #ffffff;
+                --bg-secondary: #f8f9fa;
+                --bg-card: #f1f3f4;
+                --bg-elevated: #e8eaed;
+                --text-primary: #1a1a2e;
+                --text-secondary: #4a4a5a;
+                --text-muted: #6c757d;
+                --accent-primary: #1a56db;
+                --accent-secondary: #2563eb;
+                --accent-light: #dbeafe;
+                --accent-subtle: rgba(26, 86, 219, 0.08);
+                --border-light: #e5e7eb;
+                --border-medium: #d1d5db;
+                --success: #059669;
+                --danger: #dc2626;
+                --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+                --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+            }
 
-  <body>
-    <div class="blog-header">
-      <h1 class="blog-title">Thoughts & Insights</h1>
-      <p class="blog-subtitle">Exploring ideas at the intersection of AI, mathematics, and human experience</p>
-    </div>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
 
-    <div class="blog-post">
-      <h2 class="post-title">The Only Truth We All Share: Evolution, Not Ideology</h2>
-      <div class="post-date">April 22, 2025</div>
-      <div class="post-content">
-        <p>On April 22, 2025, the serene meadows of Baisaran in Pahalgam, Kashmir—usually a retreat for honeymooners and hikers—turned into a site of bloodshed. Militants opened fire on a group of tourists, killing at least 26 and injuring many more. The Resistance Front (TRF) later claimed responsibility, asserting that these were not "innocent tourists" but individuals tied to Indian security establishments. Regardless of the claimed intent, the carnage was real. The grief was real. And the questions it raises are all too familiar.</p>
+            body {
+                font-family: "Source Serif 4", Georgia, serif;
+                background-color: var(--bg-primary);
+                color: var(--text-primary);
+                line-height: 1.8;
+                font-size: 18px;
+                -webkit-font-smoothing: antialiased;
+            }
 
-        <h2>I. Evidence of Violence: Patterns, Not Isolated Events</h2>
-        <p>This was not the first time Kashmir bled under the shadow of insurgency. From the attacks on pilgrims in Anantnag (2017) to assaults on tourists in Gulmarg, the valley has seen a historical pattern—each incident a grim addition to a long-standing conflict that has its roots deep in territorial and ideological disputes.</p>
+            .blog-container {
+                max-width: 760px;
+                margin: 0 auto;
+                padding: 48px 24px 100px;
+            }
 
-        <p>Statistical data from government and independent sources show a steady rise and fall in militancy-related violence. According to the South Asia Terrorism Portal, there have been over 45,000 fatalities in Jammu & Kashmir since 1989, including civilians, militants, and security personnel. The overarching theme? Territory. The same primal motivation that fueled the trenches of World War I and the gas chambers of World War II—land, control, power.</p>
+            /* Hero Section */
+            .hero {
+                text-align: center;
+                padding: 60px 0 48px;
+                border-bottom: 1px solid var(--border-light);
+                margin-bottom: 48px;
+            }
 
-        <p>War, whether by states or insurgents, has always hidden behind grand narratives but marched to the same drumbeat: possession.</p>
+            .hero-label {
+                font-family: "Inter", sans-serif;
+                font-size: 0.75rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 0.15em;
+                color: var(--accent-primary);
+                margin-bottom: 20px;
+                display: inline-block;
+                background: var(--accent-light);
+                padding: 6px 14px;
+                border-radius: 4px;
+            }
 
-        <h2>II. Evolution: The Only Undeniable Evidence of Who We Are</h2>
-        <p>Amid the noise of ideology, religion, and nationalism, there exists an evidence we continue to ignore—our shared evolutionary history. We all descend from the same early Homo sapiens who first walked the African savannahs. We are one species. Our DNA does not recognize caste, creed, or border.</p>
+            .hero-title {
+                font-family: "Source Serif 4", Georgia, serif;
+                font-size: clamp(1.9rem, 4.5vw, 2.6rem);
+                font-weight: 600;
+                color: var(--text-primary);
+                line-height: 1.25;
+                margin-bottom: 20px;
+                letter-spacing: -0.01em;
+            }
 
-        <blockquote>
-          <p>"Man is the only creature who refuses to be what he is."</p>
-          <cite>– Albert Camus</cite>
-        </blockquote>
+            .hero-subtitle {
+                font-size: 1.15rem;
+                color: var(--text-secondary);
+                font-weight: 400;
+                font-style: italic;
+                max-width: 580px;
+                margin: 0 auto 24px;
+            }
 
-        <p>Evolution is change. It is the rejection of rigidity. It is the biological record of experimentation, failure, and adaptation. And yet, we humans—ironically the most adaptive species—cling to static constructs of religion and identity, often to justify division and violence.</p>
+            .hero-meta {
+                font-family: "Inter", sans-serif;
+                font-size: 0.85rem;
+                color: var(--text-muted);
+            }
 
-        <p>Philosophers like Karl Popper spoke of evolutionary epistemology—the idea that knowledge evolves like species do, through variation, error, and selection. So why do we expect moral laws and social norms crafted millennia ago to remain eternally valid?</p>
+            .hero-meta span {
+                margin: 0 6px;
+            }
 
-        <h2>III. Religion: Story or Structure?</h2>
-        <p>Let us not demonize religion—it has given us beautiful metaphors, rich mythologies, and ethical guidelines. But myths are stories. And stories should evolve. The danger lies not in faith, but in fossilizing it. When stories meant to inspire turn into strictures meant to control, we lose the essence of their wisdom.</p>
+            /* Content Sections */
+            .content {
+                margin-top: 20px;
+            }
 
-        <blockquote>
-          <p>"A myth is something that never happened, but is always happening."</p>
-          <cite>– Joseph Campbell</cite>
-        </blockquote>
+            .act {
+                margin-bottom: 56px;
+                padding-top: 24px;
+            }
 
-        <p>Let the Ramayana inspire discipline and devotion—not justify caste hierarchies. Let the Quran's poetic prose ignite reflection—not rigid regulation. Let the Bible's parables urge compassion—not crusades.</p>
+            .act-header {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                margin-bottom: 24px;
+                padding-bottom: 12px;
+                border-bottom: 2px solid var(--border-light);
+            }
 
-        <p>Evidential learning—learning from experience, from history, from science—offers a living alternative. One that adapts. One that questions. One that grows.</p>
+            .act-number {
+                font-family: "JetBrains Mono", monospace;
+                font-size: 0.7rem;
+                font-weight: 500;
+                color: var(--accent-primary);
+                background: var(--accent-light);
+                padding: 4px 10px;
+                border-radius: 3px;
+                letter-spacing: 0.05em;
+            }
 
-        <h2>IV. The Way Forward: Reclaiming Our Humanity Through Evolution</h2>
-        <p>The Pahalgam attack is not just another act of terror; it's a rupture in our collective memory. A reminder that despite satellites in space and AI in our phones, our minds still live in tribes.</p>
+            .act-title {
+                font-family: "Source Serif 4", Georgia, serif;
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: var(--text-primary);
+            }
 
-        <p>Teilhard believed evolution was not just physical, but spiritual and social. That humanity is evolving toward greater unity and consciousness. But this evolution requires participation. It demands we break the rigid molds—of religion, of nation, of race—and build anew from the common clay of our origins.</p>
+            p {
+                margin-bottom: 1.5em;
+                color: var(--text-secondary);
+            }
 
-        <p>Every war ever fought—from global cataclysms to regional riots—has been about land. But the only territory truly worth claiming is the one between our ears: our consciousness. Our ability to change.</p>
-      </div>
-    </div>
+            p.lead {
+                font-size: 1.1rem;
+                color: var(--text-primary);
+                font-weight: 400;
+            }
 
-    <a href="index.html" class="back-link">← Back to Home</a>
-  </body>
-</html> -->
+            strong {
+                color: var(--text-primary);
+                font-weight: 600;
+            }
+
+            em {
+                font-style: italic;
+            }
+
+            /* Blockquotes */
+            blockquote {
+                border-left: 3px solid var(--accent-primary);
+                padding: 16px 24px;
+                margin: 28px 0;
+                background: var(--bg-secondary);
+                border-radius: 0 6px 6px 0;
+            }
+
+            blockquote p {
+                font-size: 1.05rem;
+                font-style: italic;
+                color: var(--text-primary);
+                margin-bottom: 0;
+            }
+
+            blockquote cite {
+                display: block;
+                font-family: "Inter", sans-serif;
+                font-size: 0.85rem;
+                font-style: normal;
+                color: var(--text-muted);
+                margin-top: 10px;
+                text-align: right;
+            }
+
+            /* Key Insight Boxes */
+            .insight-box {
+                background: var(--bg-secondary);
+                border: 1px solid var(--border-light);
+                border-left: 4px solid var(--accent-primary);
+                border-radius: 0 8px 8px 0;
+                padding: 20px 24px;
+                margin: 28px 0;
+            }
+
+            .insight-box p {
+                color: var(--text-primary);
+                margin-bottom: 0;
+                font-size: 1.02rem;
+            }
+
+            .insight-box.key-claim {
+                background: var(--accent-subtle);
+                border-left-color: var(--accent-secondary);
+            }
+
+            /* Figure Containers */
+            .figure-container {
+                margin: 36px 0;
+                background: var(--bg-primary);
+                border-radius: 8px;
+                overflow: hidden;
+                border: 1px solid var(--border-light);
+                box-shadow: var(--shadow-sm);
+            }
+
+            .figure-image {
+                width: 100%;
+                padding: 20px;
+                background: var(--bg-secondary);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 280px;
+            }
+
+            .figure-image img {
+                max-width: 100%;
+                height: auto;
+                border-radius: 4px;
+            }
+
+            .figure-placeholder {
+                color: var(--text-muted);
+                font-family: "Inter", sans-serif;
+                font-size: 0.85rem;
+                text-align: center;
+                padding: 48px 32px;
+                border: 2px dashed var(--border-medium);
+                border-radius: 6px;
+                background: var(--bg-primary);
+                width: 100%;
+            }
+
+            .figure-placeholder i {
+                display: block;
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+                color: var(--accent-primary);
+                opacity: 0.5;
+            }
+
+            .figure-caption {
+                padding: 14px 20px;
+                border-top: 1px solid var(--border-light);
+                background: var(--bg-primary);
+            }
+
+            .figure-label {
+                font-family: "Inter", sans-serif;
+                font-size: 0.7rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.08em;
+                color: var(--accent-primary);
+                margin-bottom: 4px;
+            }
+
+            .figure-caption p {
+                font-size: 0.9rem;
+                color: var(--text-secondary);
+                margin-bottom: 0;
+                line-height: 1.5;
+            }
+
+            .figure-source {
+                font-family: "Inter", sans-serif;
+                font-size: 0.75rem;
+                color: var(--text-muted);
+                margin-top: 6px;
+            }
+
+            /* Tables */
+            .comparison-table {
+                width: 100%;
+                margin: 28px 0;
+                border-collapse: collapse;
+                font-size: 0.95rem;
+                background: var(--bg-primary);
+                border: 1px solid var(--border-light);
+                border-radius: 6px;
+                overflow: hidden;
+            }
+
+            .comparison-table th {
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: var(--text-primary);
+                text-align: left;
+                padding: 14px 18px;
+                background: var(--bg-secondary);
+                border-bottom: 2px solid var(--border-light);
+            }
+
+            .comparison-table td {
+                padding: 14px 18px;
+                border-bottom: 1px solid var(--border-light);
+                color: var(--text-secondary);
+            }
+
+            .comparison-table tr:last-child td {
+                border-bottom: none;
+            }
+
+            .comparison-table tbody tr:hover {
+                background: var(--bg-secondary);
+            }
+
+            /* Inline SVG Figure for Act 6 */
+            .fragility-diagram {
+                background: var(--bg-primary);
+                padding: 24px;
+                border-radius: 6px;
+            }
+
+            .fragility-diagram svg {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Paper Reference Cards */
+            .paper-ref {
+                background: var(--bg-secondary);
+                border-left: 3px solid var(--accent-primary);
+                padding: 14px 20px;
+                margin: 24px 0;
+                border-radius: 0 6px 6px 0;
+            }
+
+            .paper-ref-title {
+                font-family: "Inter", sans-serif;
+                font-size: 0.9rem;
+                font-weight: 600;
+                color: var(--text-primary);
+                margin-bottom: 2px;
+            }
+
+            .paper-ref-authors {
+                font-size: 0.85rem;
+                color: var(--text-muted);
+                font-style: italic;
+            }
+
+            /* Synthesis Box */
+            .synthesis-box {
+                background: var(--bg-secondary);
+                border: 1px solid var(--border-light);
+                border-radius: 10px;
+                padding: 32px;
+                margin: 40px 0;
+            }
+
+            .synthesis-box h3 {
+                font-family: "Source Serif 4", Georgia, serif;
+                font-size: 1.15rem;
+                font-weight: 600;
+                color: var(--text-primary);
+                margin-bottom: 20px;
+                text-align: center;
+            }
+
+            /* Killer Quote */
+            .killer-quote {
+                text-align: center;
+                padding: 40px 24px;
+                margin: 40px 0;
+                position: relative;
+                background: var(--accent-subtle);
+                border-radius: 8px;
+                border: 1px solid var(--accent-light);
+            }
+
+            .killer-quote p {
+                font-size: 1.35rem;
+                font-weight: 500;
+                color: var(--text-primary);
+                line-height: 1.5;
+                margin-bottom: 0;
+            }
+
+            .killer-quote .highlight {
+                color: var(--accent-primary);
+                font-weight: 600;
+            }
+
+            /* Lists */
+            ul {
+                color: var(--text-secondary);
+                margin: 16px 0 24px 20px;
+            }
+
+            ul li {
+                margin-bottom: 8px;
+                line-height: 1.7;
+            }
+
+            /* References Section */
+            .references {
+                margin-top: 64px;
+                padding-top: 32px;
+                border-top: 1px solid var(--border-light);
+            }
+
+            .references h2 {
+                font-family: "Source Serif 4", Georgia, serif;
+                font-size: 1.15rem;
+                font-weight: 600;
+                color: var(--text-primary);
+                margin-bottom: 20px;
+            }
+
+            .references ol {
+                list-style: none;
+                counter-reset: ref-counter;
+            }
+
+            .references li {
+                counter-increment: ref-counter;
+                font-size: 0.88rem;
+                color: var(--text-secondary);
+                margin-bottom: 10px;
+                padding-left: 28px;
+                position: relative;
+                line-height: 1.6;
+            }
+
+            .references li::before {
+                content: "[" counter(ref-counter) "]";
+                position: absolute;
+                left: 0;
+                font-family: "JetBrains Mono", monospace;
+                font-size: 0.75rem;
+                color: var(--text-muted);
+            }
+
+            /* Back Link */
+            .back-link {
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                margin-top: 48px;
+                font-family: "Inter", sans-serif;
+                font-size: 0.9rem;
+                color: var(--accent-primary);
+                text-decoration: none;
+                padding: 10px 18px;
+                border: 1px solid var(--border-light);
+                border-radius: 6px;
+                transition: all 0.2s ease;
+            }
+
+            .back-link:hover {
+                background: var(--bg-secondary);
+                border-color: var(--accent-primary);
+            }
+
+            /* Responsive */
+            @media (max-width: 768px) {
+                body {
+                    font-size: 17px;
+                }
+
+                .blog-container {
+                    padding: 32px 18px 72px;
+                }
+
+                .hero {
+                    padding: 40px 0 32px;
+                }
+
+                .act-header {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 8px;
+                }
+
+                .comparison-table {
+                    font-size: 0.88rem;
+                }
+
+                .comparison-table th,
+                .comparison-table td {
+                    padding: 12px 14px;
+                }
+
+                .killer-quote p {
+                    font-size: 1.15rem;
+                }
+
+                .synthesis-box {
+                    padding: 24px 20px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="blog-container">
+            <!-- Hero Section -->
+            <header class="hero">
+                <div class="hero-label">Machine Learning Research</div>
+                <h1 class="hero-title">
+                    The Illusion of Learning: Why a Few Examples Can Rewire an
+                    LLM's Mind
+                </h1>
+                <p class="hero-subtitle">
+                    A journey into one of AI's strangest paradoxes—where models
+                    that cannot learn suddenly behave as if they just did.
+                </p>
+                <div class="hero-meta">
+                    <span>April 2026</span>
+                    <span>·</span>
+                    <span>15 min read</span>
+                </div>
+            </header>
+
+            <!-- Main Content -->
+            <main class="content">
+                <!-- ACT 1 -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">ACT I</span>
+                        <h2 class="act-title">The Magic Trick</h2>
+                    </div>
+
+                    <p class="lead">
+                        Here's a simple experiment you can try right now. Ask an
+                        LLM to solve a moderately tricky arithmetic problem—say,
+                        multi-step word problems involving fractions. Watch it
+                        stumble. Now, paste three solved examples before your
+                        question. Same model. Same weights. Same frozen
+                        parameters.
+                    </p>
+
+                    <p>It solves it perfectly.</p>
+
+                    <p>
+                        No gradient updates. No backpropagation. No optimizer
+                        step. The model's weights are
+                        <em>literally identical</em> before and after. And
+                        yet—it <strong>behaves</strong> as if it just learned
+                        something new.
+                    </p>
+
+                    <p>
+                        This is the paradox at the heart of in-context learning,
+                        and it has quietly become one of the most important
+                        phenomena in modern AI.
+                    </p>
+
+                    <div class="paper-ref">
+                        <div class="paper-ref-title">
+                            "Language Models are Few-Shot Learners"
+                        </div>
+                        <div class="paper-ref-authors">
+                            Brown et al., NeurIPS 2020
+                        </div>
+                    </div>
+
+                    <p>
+                        When OpenAI released GPT-3 in 2020, the headline wasn't
+                        just "bigger model." It was this:
+                        <strong
+                            >a 175-billion parameter model could rival
+                            fine-tuned systems just by seeing a handful of
+                            examples in the prompt.</strong
+                        >
+                    </p>
+
+                    <!-- Figure 1: GPT-3 Few-Shot Scaling -->
+                    <div class="figure-container">
+                        <div class="figure-image">
+                            <img
+                                src="images/blog/blog1/fewshot1.png"
+                                alt="description"
+                            />
+                        </div>
+                        <div class="figure-caption">
+                            <div class="figure-label">Figure 1</div>
+                            <p>
+                                Few-shot learning performance scales
+                                dramatically with model size. Larger models show
+                                remarkable improvements with just 1-5 examples
+                                in context, approaching fine-tuned performance
+                                without any weight updates.
+                            </p>
+                            <div class="figure-source">
+                                Source: Brown et al., 2020
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        The implications were staggering. We had spent years
+                        building elaborate training pipelines—curating datasets,
+                        tuning hyperparameters, running expensive fine-tuning
+                        jobs. And here was a model that could approximate all of
+                        that... with a few sentences of context.
+                    </p>
+
+                    <p>
+                        But this raises a question we still haven't fully
+                        answered:
+                    </p>
+
+                    <div class="insight-box">
+                        <p>
+                            <strong
+                                >If the weights don't change, what
+                                <em>is</em> changing?</strong
+                            >
+                        </p>
+                    </div>
+                </section>
+
+                <!-- ACT 2 -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">ACT II</span>
+                        <h2 class="act-title">
+                            It's Not Just Answers, It's Thinking
+                        </h2>
+                    </div>
+
+                    <p>
+                        The mystery deepens when you look closer at
+                        <em>what kind</em> of examples work.
+                    </p>
+
+                    <p>
+                        <strong>The naive assumption:</strong> Give the model
+                        correct answers, and it will copy them.
+                    </p>
+
+                    <p>
+                        <strong>The reality:</strong> Giving only answers
+                        produces modest improvements. But giving
+                        <em>reasoning steps</em>—showing the model
+                        <em>how</em> to think—produces dramatic gains.
+                    </p>
+
+                    <div class="paper-ref">
+                        <div class="paper-ref-title">
+                            "Chain-of-Thought Prompting Elicits Reasoning in
+                            Large Language Models"
+                        </div>
+                        <div class="paper-ref-authors">
+                            Wei et al., NeurIPS 2022
+                        </div>
+                    </div>
+
+                    <p>
+                        Wei et al. demonstrated something remarkable: when you
+                        show a model step-by-step reasoning traces before a
+                        question, its performance on complex reasoning tasks can
+                        jump by 20-40+ percentage points.
+                    </p>
+
+                    <!-- Figure 2: Chain-of-Thought -->
+                    <div class="figure-container">
+                        <div class="figure-image">
+                            <img
+                                src="images/blog/blog1/cot.png"
+                                alt="description"
+                            />
+                        </div>
+                        <div class="figure-caption">
+                            <div class="figure-label">Figure 2</div>
+                            <p>
+                                Standard prompting vs. chain-of-thought
+                                prompting on grade school math (GSM8K). The
+                                visual contrast is stark: accuracy jumps from
+                                ~18% to ~57% on PaLM 540B simply by
+                                demonstrating reasoning steps.
+                            </p>
+                            <div class="figure-source">
+                                Source: Wei et al., 2022
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        The model isn't copying answers. It's copying
+                        <em>processes</em>.
+                    </p>
+
+                    <p>This is the first conceptual shift:</p>
+
+                    <div class="insight-box key-claim">
+                        <p>
+                            <strong
+                                >Few-shot learning is not about injecting
+                                information. It's about behavioral
+                                imitation.</strong
+                            >
+                        </p>
+                    </div>
+
+                    <p>
+                        You're not teaching the model new facts. You're showing
+                        it a <em>style of reasoning</em>, and it mirrors that
+                        style on novel problems.
+                    </p>
+
+                    <p>
+                        Think of it like this: you're not uploading data to a
+                        hard drive. You're demonstrating a dance, and the model
+                        follows your choreography.
+                    </p>
+                </section>
+
+                <!-- ACT 3 -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">ACT III</span>
+                        <h2 class="act-title">
+                            The Wrong Explanation (And Why It Fails)
+                        </h2>
+                    </div>
+
+                    <p>
+                        At this point, the intuitive explanation seems obvious:
+                    </p>
+
+                    <blockquote>
+                        <p>
+                            The model is treating examples like mini-training
+                            data. It extracts patterns from them, generalizes,
+                            and applies those patterns to new inputs.
+                        </p>
+                    </blockquote>
+
+                    <p>This explanation is compelling. It's also wrong.</p>
+
+                    <div class="paper-ref">
+                        <div class="paper-ref-title">
+                            "Rethinking the Role of Demonstrations: What Makes
+                            In-Context Learning Work?"
+                        </div>
+                        <div class="paper-ref-authors">
+                            Min et al., EMNLP 2022
+                        </div>
+                    </div>
+
+                    <p>
+                        Min et al. conducted a beautifully counterintuitive
+                        experiment. They took few-shot prompts and
+                        <strong>flipped the labels</strong>—giving deliberately
+                        wrong answers in the demonstrations.
+                    </p>
+
+                    <p>
+                        If the model were "learning" from examples like training
+                        data, this should destroy performance. Wrong labels
+                        should teach wrong patterns.
+                    </p>
+
+                    <p>But that's not what happened.</p>
+
+                    <!-- Figure 3: Label Flipping -->
+                    <div class="figure-container">
+                        <div class="figure-image">
+                            <img
+                                src="images/blog/blog1/label_flipping.png"
+                                alt="description"
+                            />
+                        </div>
+                        <div class="figure-caption">
+                            <div class="figure-label">Figure 3</div>
+                            <p>
+                                Surprising result: random labels degrade
+                                performance only moderately, while removing
+                                demonstrations entirely hurts much more. The gap
+                                between correct and random labels is smaller
+                                than expected.
+                            </p>
+                            <div class="figure-source">
+                                Source: Min et al., 2022
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><strong>Key findings:</strong></p>
+                    <ul>
+                        <li>Performance dropped, but not catastrophically</li>
+                        <li>
+                            The <em>format</em> and <em>structure</em> of
+                            demonstrations mattered more than their correctness
+                        </li>
+                        <li>
+                            Even with random labels, the model still benefited
+                            from seeing the task structure
+                        </li>
+                    </ul>
+
+                    <p>This is a profound result. It tells us:</p>
+
+                    <div class="insight-box key-claim">
+                        <p>
+                            <strong
+                                >The model isn't extracting factual patterns
+                                from demonstrations. It's extracting
+                                <em>procedural templates</em>.</strong
+                            >
+                        </p>
+                    </div>
+
+                    <p>
+                        If few-shot learning were true learning, wrong answers
+                        should be poison. But they're more like... noise. The
+                        signal is in the structure, not the content.
+                    </p>
+                </section>
+
+                <!-- ACT 4 -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">ACT IV</span>
+                        <h2 class="act-title">The Hidden Mechanism</h2>
+                    </div>
+
+                    <p>So if examples aren't data, what are they?</p>
+
+                    <p>Let's go deeper into the machinery.</p>
+
+                    <div class="paper-ref">
+                        <div class="paper-ref-title">
+                            "Transformers Learn In-Context by Gradient Descent"
+                        </div>
+                        <div class="paper-ref-authors">
+                            von Oswald et al., ICML 2023
+                        </div>
+                    </div>
+
+                    <p>
+                        A series of remarkable papers have shown that
+                        transformer attention layers can
+                        <em>implicitly simulate gradient descent</em>. The
+                        mathematical structure of self-attention, under certain
+                        conditions, implements optimization steps.
+                    </p>
+
+                    <!-- Figure 4: Implicit Gradient Descent -->
+                    <div class="figure-container">
+                        <div class="figure-image">
+                            <img
+                                src="images/blog/blog1/implicit_gradient_descent.png"
+                                alt="description"
+                            />
+                        </div>
+                        <div class="figure-caption">
+                            <div class="figure-label">Figure 4</div>
+                            <p>
+                                Conceptual diagram showing how attention layers
+                                can be interpreted as gradient descent steps.
+                                The forward pass implements implicit
+                                optimization on an internal objective.
+                            </p>
+                            <div class="figure-source">
+                                Source: von Oswald et al., 2023
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>This reframes everything:</p>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Traditional Learning</th>
+                                <th>In-Context Learning</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Explicit gradient computation</td>
+                                <td>Implicit gradient via attention</td>
+                            </tr>
+                            <tr>
+                                <td>Weight updates</td>
+                                <td>Activation pattern shifts</td>
+                            </tr>
+                            <tr>
+                                <td>Permanent changes</td>
+                                <td>Temporary, context-bound changes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>
+                        The model isn't "frozen" in the way we thought. It's
+                        running a <em>shadow optimization process</em> inside
+                        its forward pass.
+                    </p>
+
+                    <p>
+                        But this raises the real question—the one that will
+                        anchor the rest of this blog:
+                    </p>
+
+                    <div class="insight-box">
+                        <p>
+                            <strong
+                                >If the model is optimizing, what is it
+                                optimizing <em>for</em>?</strong
+                            >
+                        </p>
+                    </div>
+
+                    <p>
+                        In traditional training, we have a loss function. We
+                        have a reward signal. We have an explicit objective.
+                    </p>
+
+                    <p>In few-shot prompting, we have... examples.</p>
+
+                    <p>So what role are those examples playing?</p>
+                </section>
+
+                <!-- ACT 5 -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">ACT V</span>
+                        <h2 class="act-title">
+                            The Big Twist: Examples as Reward Functions
+                        </h2>
+                    </div>
+
+                    <p class="lead">
+                        Here's the reframing that changed how I think about this
+                        entire phenomenon:
+                    </p>
+
+                    <div class="insight-box key-claim">
+                        <p>
+                            <strong
+                                >Few-shot examples don't act like training data.
+                                They act like reward functions.</strong
+                            >
+                        </p>
+                    </div>
+
+                    <p>Let me unpack this.</p>
+
+                    <div class="paper-ref">
+                        <div class="paper-ref-title">
+                            "Training Language Models to Follow Instructions
+                            with Human Feedback"
+                        </div>
+                        <div class="paper-ref-authors">
+                            Ouyang et al., NeurIPS 2022
+                        </div>
+                    </div>
+
+                    <p>
+                        In reinforcement learning from human feedback (RLHF), we
+                        train an explicit reward model. Humans label outputs as
+                        good or bad. The model learns to maximize that reward
+                        signal.
+                    </p>
+
+                    <p>But look at what few-shot prompting does:</p>
+                    <ul>
+                        <li>You show examples of "good" outputs</li>
+                        <li>
+                            The model shifts its behavior toward similar outputs
+                        </li>
+                        <li>
+                            No explicit scoring—but clear preference signals
+                        </li>
+                    </ul>
+
+                    <!-- Figure 5: RLHF vs Few-Shot Analogy -->
+                    <div class="figure-container">
+                        <div class="figure-image">
+                            <img
+                                src="images/blog/blog1/rlhf_vs_fewshot.png"
+                                alt="description"
+                            />
+                        </div>
+                        <div class="figure-caption">
+                            <div class="figure-label">Figure 5</div>
+                            <p>
+                                Comparing RLHF (explicit reward model →
+                                optimization) with few-shot prompting
+                                (demonstrated trajectories → implicit behavioral
+                                shift). The structural parallel reveals few-shot
+                                as a form of reward shaping.
+                            </p>
+                            <div class="figure-source">
+                                Source: Author's conceptualization
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><strong>The Analogy:</strong></p>
+
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>RLHF</th>
+                                <th>Few-Shot Prompting</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Explicit reward model</td>
+                                <td>Implicit preference via examples</td>
+                            </tr>
+                            <tr>
+                                <td>Scalar reward signal</td>
+                                <td>Demonstrated trajectories</td>
+                            </tr>
+                            <tr>
+                                <td>Trained optimization</td>
+                                <td>Forward-pass optimization</td>
+                            </tr>
+                            <tr>
+                                <td>Permanent policy shift</td>
+                                <td>Temporary behavioral bias</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <p>
+                        In RLHF, we say:
+                        <em>"This output scores 0.8. Optimize toward it."</em>
+                    </p>
+
+                    <p>
+                        In few-shot, we say:
+                        <em
+                            >"Here's what good looks like. Now do something
+                            similar."</em
+                        >
+                    </p>
+
+                    <p><strong>My Refined Claim:</strong></p>
+
+                    <blockquote>
+                        <p>
+                            Few-shot examples are not rewards—but they
+                            <strong>shape the reward landscape</strong> the
+                            model implicitly follows.
+                        </p>
+                    </blockquote>
+
+                    <p>They define:</p>
+                    <ul>
+                        <li>What reasoning style is preferred</li>
+                        <li>What output format is expected</li>
+                        <li>What level of detail is appropriate</li>
+                        <li>What tone is desired</li>
+                    </ul>
+
+                    <p>
+                        The model doesn't receive a scalar reward. But it
+                        receives something arguably richer:
+                        <strong
+                            >full trajectories of high-reward behavior</strong
+                        >.
+                    </p>
+
+                    <p>
+                        Instead of saying "this answer scores 9/10," you're
+                        saying "here's what a 10/10 answer looks like in full
+                        detail."
+                    </p>
+                </section>
+
+                <!-- ACT 6 -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">ACT VI</span>
+                        <h2 class="act-title">
+                            The Fragility (Breaking the Illusion)
+                        </h2>
+                    </div>
+
+                    <p>
+                        Now I have to be honest about the limits of this
+                        analogy.
+                    </p>
+
+                    <p>
+                        If few-shot examples were robust reward functions, they
+                        should produce stable, reliable improvements. But they
+                        don't.
+                    </p>
+
+                    <div class="paper-ref">
+                        <div class="paper-ref-title">
+                            "Large Language Models Are Not Robust Reasoners"
+                        </div>
+                        <div class="paper-ref-authors">Bian et al., 2024</div>
+                    </div>
+
+                    <p>
+                        Study after study has shown that in-context learning is
+                        <strong>fragile</strong>.
+                    </p>
+
+                    <!-- Figure 6: Custom SVG - Fragility Visualization (Light Theme) -->
+                    <div class="figure-container">
+                        <div class="figure-image fragility-diagram">
+                            <svg
+                                viewBox="0 0 700 420"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <!-- Background -->
+                                <defs>
+                                    <linearGradient
+                                        id="successGrad"
+                                        x1="0%"
+                                        y1="0%"
+                                        x2="0%"
+                                        y2="100%"
+                                    >
+                                        <stop
+                                            offset="0%"
+                                            style="
+                                                stop-color: #059669;
+                                                stop-opacity: 1;
+                                            "
+                                        />
+                                        <stop
+                                            offset="100%"
+                                            style="
+                                                stop-color: #047857;
+                                                stop-opacity: 1;
+                                            "
+                                        />
+                                    </linearGradient>
+                                    <linearGradient
+                                        id="failGrad"
+                                        x1="0%"
+                                        y1="0%"
+                                        x2="0%"
+                                        y2="100%"
+                                    >
+                                        <stop
+                                            offset="0%"
+                                            style="
+                                                stop-color: #dc2626;
+                                                stop-opacity: 1;
+                                            "
+                                        />
+                                        <stop
+                                            offset="100%"
+                                            style="
+                                                stop-color: #b91c1c;
+                                                stop-opacity: 1;
+                                            "
+                                        />
+                                    </linearGradient>
+                                    <linearGradient
+                                        id="neutralGrad"
+                                        x1="0%"
+                                        y1="0%"
+                                        x2="100%"
+                                        y2="0%"
+                                    >
+                                        <stop
+                                            offset="0%"
+                                            style="
+                                                stop-color: #1a56db;
+                                                stop-opacity: 1;
+                                            "
+                                        />
+                                        <stop
+                                            offset="100%"
+                                            style="
+                                                stop-color: #2563eb;
+                                                stop-opacity: 1;
+                                            "
+                                        />
+                                    </linearGradient>
+                                </defs>
+
+                                <!-- Title -->
+                                <text
+                                    x="350"
+                                    y="30"
+                                    text-anchor="middle"
+                                    fill="#1a1a2e"
+                                    font-family="Inter, sans-serif"
+                                    font-size="14"
+                                    font-weight="600"
+                                >
+                                    The Fragility of In-Context Learning
+                                </text>
+
+                                <!-- Central Prompt Box -->
+                                <rect
+                                    x="260"
+                                    y="50"
+                                    width="180"
+                                    height="44"
+                                    rx="6"
+                                    fill="url(#neutralGrad)"
+                                />
+                                <text
+                                    x="350"
+                                    y="77"
+                                    text-anchor="middle"
+                                    fill="white"
+                                    font-family="Inter, sans-serif"
+                                    font-size="12"
+                                    font-weight="500"
+                                >
+                                    Few-Shot Prompt
+                                </text>
+
+                                <!-- Success Arrow (Original) -->
+                                <path
+                                    d="M350 94 L350 124"
+                                    stroke="#059669"
+                                    stroke-width="2"
+                                    fill="none"
+                                />
+                                <polygon
+                                    points="350,132 344,122 356,122"
+                                    fill="#059669"
+                                />
+
+                                <!-- Original Performance Box -->
+                                <rect
+                                    x="285"
+                                    y="138"
+                                    width="130"
+                                    height="36"
+                                    rx="5"
+                                    fill="#059669"
+                                />
+                                <text
+                                    x="350"
+                                    y="161"
+                                    text-anchor="middle"
+                                    fill="white"
+                                    font-family="JetBrains Mono, monospace"
+                                    font-size="13"
+                                    font-weight="500"
+                                >
+                                    85% Accuracy
+                                </text>
+
+                                <!-- Perturbation Arrows -->
+                                <!-- Left Arrow -->
+                                <path
+                                    d="M260 72 C 180 72, 140 100, 140 150"
+                                    stroke="#6c757d"
+                                    stroke-width="1.5"
+                                    fill="none"
+                                    stroke-dasharray="5,4"
+                                />
+                                <polygon
+                                    points="140,158 134,148 146,148"
+                                    fill="#dc2626"
+                                />
+
+                                <!-- Center Arrow -->
+                                <path
+                                    d="M350 174 L350 210"
+                                    stroke="#6c757d"
+                                    stroke-width="1.5"
+                                    fill="none"
+                                    stroke-dasharray="5,4"
+                                />
+                                <polygon
+                                    points="350,218 344,208 356,208"
+                                    fill="#dc2626"
+                                />
+
+                                <!-- Right Arrow -->
+                                <path
+                                    d="M440 72 C 520 72, 560 100, 560 150"
+                                    stroke="#6c757d"
+                                    stroke-width="1.5"
+                                    fill="none"
+                                    stroke-dasharray="5,4"
+                                />
+                                <polygon
+                                    points="560,158 554,148 566,148"
+                                    fill="#dc2626"
+                                />
+
+                                <!-- Left Panel: Order Sensitivity -->
+                                <rect
+                                    x="40"
+                                    y="165"
+                                    width="200"
+                                    height="155"
+                                    rx="8"
+                                    fill="#f8f9fa"
+                                    stroke="#e5e7eb"
+                                    stroke-width="1"
+                                />
+                                <text
+                                    x="140"
+                                    y="192"
+                                    text-anchor="middle"
+                                    fill="#1a1a2e"
+                                    font-family="Inter, sans-serif"
+                                    font-size="12"
+                                    font-weight="600"
+                                >
+                                    Order Sensitivity
+                                </text>
+                                <text
+                                    x="140"
+                                    y="210"
+                                    text-anchor="middle"
+                                    fill="#6c757d"
+                                    font-family="Source Serif 4, serif"
+                                    font-size="11"
+                                    font-style="italic"
+                                >
+                                    Reordering examples
+                                </text>
+
+                                <!-- Order bars -->
+                                <text
+                                    x="60"
+                                    y="245"
+                                    fill="#4a4a5a"
+                                    font-family="Inter, sans-serif"
+                                    font-size="10"
+                                >
+                                    Original
+                                </text>
+                                <rect
+                                    x="110"
+                                    y="235"
+                                    width="100"
+                                    height="14"
+                                    rx="2"
+                                    fill="#e5e7eb"
+                                />
+                                <rect
+                                    x="110"
+                                    y="235"
+                                    width="85"
+                                    height="14"
+                                    rx="2"
+                                    fill="url(#successGrad)"
+                                />
+                                <text
+                                    x="220"
+                                    y="246"
+                                    fill="#4a4a5a"
+                                    font-family="JetBrains Mono, monospace"
+                                    font-size="10"
+                                >
+                                    85%
+                                </text>
+
+                                <text
+                                    x="60"
+                                    y="275"
+                                    fill="#4a4a5a"
+                                    font-family="Inter, sans-serif"
+                                    font-size="10"
+                                >
+                                    Reordered
+                                </text>
+                                <rect
+                                    x="110"
+                                    y="265"
+                                    width="100"
+                                    height="14"
+                                    rx="2"
+                                    fill="#e5e7eb"
+                                />
+                                <rect
+                                    x="110"
+                                    y="265"
+                                    width="65"
+                                    height="14"
+                                    rx="2"
+                                    fill="url(#failGrad)"
+                                />
+                                <text
+                                    x="220"
+                                    y="276"
+                                    fill="#4a4a5a"
+                                    font-family="JetBrains Mono, monospace"
+                                    font-size="10"
+                                >
+                                    65%
+                                </text>
+
+                                <rect
+                                    x="90"
+                                    y="295"
+                                    width="100"
+                                    height="20"
+                                    rx="4"
+                                    fill="#fef2f2"
+                                    stroke="#fecaca"
+                                    stroke-width="1"
+                                />
+                                <text
+                                    x="140"
+                                    y="309"
+                                    text-anchor="middle"
+                                    fill="#dc2626"
+                                    font-family="Inter, sans-serif"
+                                    font-size="11"
+                                    font-weight="600"
+                                >
+                                    −20 pts
+                                </text>
+
+                                <!-- Center Panel: Irrelevant Context -->
+                                <rect
+                                    x="250"
+                                    y="225"
+                                    width="200"
+                                    height="155"
+                                    rx="8"
+                                    fill="#f8f9fa"
+                                    stroke="#e5e7eb"
+                                    stroke-width="1"
+                                />
+                                <text
+                                    x="350"
+                                    y="252"
+                                    text-anchor="middle"
+                                    fill="#1a1a2e"
+                                    font-family="Inter, sans-serif"
+                                    font-size="12"
+                                    font-weight="600"
+                                >
+                                    Irrelevant Context
+                                </text>
+                                <text
+                                    x="350"
+                                    y="270"
+                                    text-anchor="middle"
+                                    fill="#6c757d"
+                                    font-family="Source Serif 4, serif"
+                                    font-size="11"
+                                    font-style="italic"
+                                >
+                                    Adding unrelated information
+                                </text>
+
+                                <!-- Context bars -->
+                                <text
+                                    x="270"
+                                    y="305"
+                                    fill="#4a4a5a"
+                                    font-family="Inter, sans-serif"
+                                    font-size="10"
+                                >
+                                    Original
+                                </text>
+                                <rect
+                                    x="320"
+                                    y="295"
+                                    width="100"
+                                    height="14"
+                                    rx="2"
+                                    fill="#e5e7eb"
+                                />
+                                <rect
+                                    x="320"
+                                    y="295"
+                                    width="85"
+                                    height="14"
+                                    rx="2"
+                                    fill="url(#successGrad)"
+                                />
+                                <text
+                                    x="430"
+                                    y="306"
+                                    fill="#4a4a5a"
+                                    font-family="JetBrains Mono, monospace"
+                                    font-size="10"
+                                >
+                                    85%
+                                </text>
+
+                                <text
+                                    x="270"
+                                    y="335"
+                                    fill="#4a4a5a"
+                                    font-family="Inter, sans-serif"
+                                    font-size="10"
+                                >
+                                    + Noise
+                                </text>
+                                <rect
+                                    x="320"
+                                    y="325"
+                                    width="100"
+                                    height="14"
+                                    rx="2"
+                                    fill="#e5e7eb"
+                                />
+                                <rect
+                                    x="320"
+                                    y="325"
+                                    width="55"
+                                    height="14"
+                                    rx="2"
+                                    fill="url(#failGrad)"
+                                />
+                                <text
+                                    x="430"
+                                    y="336"
+                                    fill="#4a4a5a"
+                                    font-family="JetBrains Mono, monospace"
+                                    font-size="10"
+                                >
+                                    55%
+                                </text>
+
+                                <rect
+                                    x="300"
+                                    y="355"
+                                    width="100"
+                                    height="20"
+                                    rx="4"
+                                    fill="#fef2f2"
+                                    stroke="#fecaca"
+                                    stroke-width="1"
+                                />
+                                <text
+                                    x="350"
+                                    y="369"
+                                    text-anchor="middle"
+                                    fill="#dc2626"
+                                    font-family="Inter, sans-serif"
+                                    font-size="11"
+                                    font-weight="600"
+                                >
+                                    −30 pts
+                                </text>
+
+                                <!-- Right Panel: Format Sensitivity -->
+                                <rect
+                                    x="460"
+                                    y="165"
+                                    width="200"
+                                    height="155"
+                                    rx="8"
+                                    fill="#f8f9fa"
+                                    stroke="#e5e7eb"
+                                    stroke-width="1"
+                                />
+                                <text
+                                    x="560"
+                                    y="192"
+                                    text-anchor="middle"
+                                    fill="#1a1a2e"
+                                    font-family="Inter, sans-serif"
+                                    font-size="12"
+                                    font-weight="600"
+                                >
+                                    Format Sensitivity
+                                </text>
+                                <text
+                                    x="560"
+                                    y="210"
+                                    text-anchor="middle"
+                                    fill="#6c757d"
+                                    font-family="Source Serif 4, serif"
+                                    font-size="11"
+                                    font-style="italic"
+                                >
+                                    Minor formatting changes
+                                </text>
+
+                                <!-- Format bars -->
+                                <text
+                                    x="480"
+                                    y="245"
+                                    fill="#4a4a5a"
+                                    font-family="Inter, sans-serif"
+                                    font-size="10"
+                                >
+                                    Original
+                                </text>
+                                <rect
+                                    x="530"
+                                    y="235"
+                                    width="100"
+                                    height="14"
+                                    rx="2"
+                                    fill="#e5e7eb"
+                                />
+                                <rect
+                                    x="530"
+                                    y="235"
+                                    width="85"
+                                    height="14"
+                                    rx="2"
+                                    fill="url(#successGrad)"
+                                />
+                                <text
+                                    x="640"
+                                    y="246"
+                                    fill="#4a4a5a"
+                                    font-family="JetBrains Mono, monospace"
+                                    font-size="10"
+                                >
+                                    85%
+                                </text>
+
+                                <text
+                                    x="480"
+                                    y="275"
+                                    fill="#4a4a5a"
+                                    font-family="Inter, sans-serif"
+                                    font-size="10"
+                                >
+                                    Reformatted
+                                </text>
+                                <rect
+                                    x="530"
+                                    y="265"
+                                    width="100"
+                                    height="14"
+                                    rx="2"
+                                    fill="#e5e7eb"
+                                />
+                                <rect
+                                    x="530"
+                                    y="265"
+                                    width="70"
+                                    height="14"
+                                    rx="2"
+                                    fill="url(#failGrad)"
+                                />
+                                <text
+                                    x="640"
+                                    y="276"
+                                    fill="#4a4a5a"
+                                    font-family="JetBrains Mono, monospace"
+                                    font-size="10"
+                                >
+                                    70%
+                                </text>
+
+                                <rect
+                                    x="510"
+                                    y="295"
+                                    width="100"
+                                    height="20"
+                                    rx="4"
+                                    fill="#fef2f2"
+                                    stroke="#fecaca"
+                                    stroke-width="1"
+                                />
+                                <text
+                                    x="560"
+                                    y="309"
+                                    text-anchor="middle"
+                                    fill="#dc2626"
+                                    font-family="Inter, sans-serif"
+                                    font-size="11"
+                                    font-weight="600"
+                                >
+                                    −15 pts
+                                </text>
+
+                                <!-- Bottom insight -->
+                                <text
+                                    x="350"
+                                    y="405"
+                                    text-anchor="middle"
+                                    fill="#6c757d"
+                                    font-family="Source Serif 4, serif"
+                                    font-size="12"
+                                    font-style="italic"
+                                >
+                                    Small perturbations cause dramatic
+                                    performance drops
+                                </text>
+                            </svg>
+                        </div>
+                        <div class="figure-caption">
+                            <div class="figure-label">Figure 6</div>
+                            <p>
+                                The fragility of in-context learning visualized.
+                                Small perturbations—reordering examples,
+                                changing formatting, or adding irrelevant
+                                context—can cause accuracy drops of 15-30+
+                                percentage points. If examples were true reward
+                                functions, they should be robust. They're not.
+                            </p>
+                            <div class="figure-source">
+                                Source: Synthesized from Bian et al., 2024 and
+                                related work
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><strong>Known fragilities:</strong></p>
+                    <ul>
+                        <li>
+                            <strong>Order sensitivity:</strong> Changing the
+                            order of few-shot examples can shift accuracy by 15+
+                            points
+                        </li>
+                        <li>
+                            <strong>Format sensitivity:</strong> Minor
+                            formatting changes break the spell
+                        </li>
+                        <li>
+                            <strong>Irrelevant context:</strong> Adding
+                            unrelated information disrupts reasoning
+                        </li>
+                        <li>
+                            <strong>Paraphrase sensitivity:</strong> Same
+                            meaning, different words → different performance
+                        </li>
+                    </ul>
+
+                    <p><strong>Interpretation:</strong></p>
+
+                    <p>
+                        If examples were true reward functions, they should be
+                        <em>robust</em>. Real reward signals don't flip when you
+                        reorder training data.
+                    </p>
+
+                    <p>But few-shot examples are:</p>
+                    <ul>
+                        <li>Weak signals</li>
+                        <li>Local in their effect</li>
+                        <li>Temporary (gone when context clears)</li>
+                        <li>Highly sensitive to surface features</li>
+                    </ul>
+
+                    <div class="insight-box">
+                        <p>
+                            <strong
+                                >The "reward function" interpretation is a
+                                useful analogy, but it's an imperfect one. These
+                                are fragile, ephemeral, and context-dependent
+                                preference signals.</strong
+                            >
+                        </p>
+                    </div>
+                </section>
+
+                <!-- ACT 7 -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">ACT VII</span>
+                        <h2 class="act-title">Scaling the Illusion</h2>
+                    </div>
+
+                    <p>
+                        Despite this fragility, something remarkable is
+                        emerging.
+                    </p>
+
+                    <p>
+                        What happens when you scale up the number of examples?
+                    </p>
+
+                    <div class="paper-ref">
+                        <div class="paper-ref-title">
+                            "Many-Shot In-Context Learning"
+                        </div>
+                        <div class="paper-ref-authors">
+                            Agarwal et al., 2024
+                        </div>
+                    </div>
+
+                    <p>
+                        With modern context windows expanding to 100K+ tokens,
+                        researchers have tested what happens with hundreds or
+                        thousands of examples in context.
+                    </p>
+
+                    <!-- Figure 7: Many-Shot Scaling -->
+                    <div class="figure-container">
+                        <div class="figure-image">
+                            <img
+                                src="images/blog/blog1/many_shot_scaling.png"
+                                alt="description"
+                            />
+                        </div>
+                        <div class="figure-caption">
+                            <div class="figure-label">Figure 7</div>
+                            <p>
+                                Many-shot scaling curves showing continued
+                                improvement with hundreds to thousands of
+                                examples. Performance approaches fine-tuning
+                                levels on certain tasks, blurring the line
+                                between prompting and training.
+                            </p>
+                            <div class="figure-source">
+                                Source: Agarwal et al., 2024
+                            </div>
+                        </div>
+                    </div>
+
+                    <p><strong>Key findings:</strong></p>
+                    <ul>
+                        <li>
+                            Performance continues improving with more examples
+                            (no clear plateau)
+                        </li>
+                        <li>
+                            Many-shot ICL can match or approach fine-tuning on
+                            certain tasks
+                        </li>
+                        <li>
+                            The gap between "prompting" and "training" is
+                            narrowing
+                        </li>
+                    </ul>
+
+                    <p><strong>The Implication:</strong></p>
+
+                    <p>
+                        Few-shot learning was just the beginning. We're
+                        discovering that
+                        <strong>context itself can act like training</strong>.
+                    </p>
+
+                    <p>
+                        The distinction we drew between "inference-time
+                        adaptation" and "training-time learning" is blurring.
+                        The forward pass is becoming a site of optimization.
+                    </p>
+                </section>
+
+                <!-- ACT 8 -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">ACT VIII</span>
+                        <h2 class="act-title">
+                            The Deeper Problem (And A Path Forward)
+                        </h2>
+                    </div>
+
+                    <p>So where does this leave us?</p>
+
+                    <p>
+                        Few-shot works. Sometimes brilliantly. But it's
+                        inconsistent. Fragile. Unpredictable.
+                    </p>
+
+                    <p>
+                        The problem, I believe, is not with the models. It's
+                        with
+                        <strong>how we represent the reasoning space</strong>.
+                    </p>
+
+                    <p><strong>The Current Paradigm:</strong></p>
+
+                    <p>We give models unstructured examples:</p>
+                    <ul style="font-style: italic">
+                        <li>"Here's problem A and solution A"</li>
+                        <li>"Here's problem B and solution B"</li>
+                        <li>"Now solve problem C"</li>
+                    </ul>
+
+                    <p>And we hope the model extracts the right patterns.</p>
+
+                    <p><strong>The Problem:</strong></p>
+
+                    <p>
+                        This is like teaching someone to play chess by showing
+                        them three random games. They might pick up some
+                        patterns. But without understanding <em>why</em> moves
+                        are good—without structural knowledge of the
+                        game—they'll fail on novel positions.
+                    </p>
+<!--
+                    <!-- Figure 8: Structured Reasoning -->
+                    <div class="figure-container">
+                        <!--<div class="figure-image">
+                            <div class="figure-placeholder">
+                                <i class="fas fa-sitemap"></i>
+                                Replace with: Your research visualization<br />
+                                Placeholder abstraction / discourse structure
+                                diagram
+                            </div>
+                        </div>
+                        <div class="figure-caption">
+                            <div class="figure-label">Figure 8</div>
+                            <p>
+                                Moving from unstructured examples to structured
+                                reasoning environments. By formalizing how
+                                premises connect, how arguments flow, and how
+                                abstractions layer, we can make the implicit
+                                "reward signal" more stable and generalizable.
+                            </p>
+                            <div class="figure-source">
+                                Source: Author's research
+                            </div>
+                        </div>
+                    </div>-->-->
+
+                    <p><strong>A Better Approach:</strong></p>
+
+                    <p>
+                        What if instead of showing examples, we gave models
+                        <strong>structured reasoning environments</strong>?
+                    </p>
+
+                    <ul>
+                        <li>Explicit problem decomposition frameworks</li>
+                        <li>
+                            Abstract reasoning templates (not specific
+                            solutions)
+                        </li>
+                        <li>Discourse structures that guide logical flow</li>
+                        <li>
+                            Placeholder abstractions that generalize across
+                            problems
+                        </li>
+                    </ul>
+
+                    <div class="insight-box key-claim">
+                        <p>
+                            <strong
+                                >Instead of injecting "reward trajectories," we
+                                could inject "reward-generating
+                                structures."</strong
+                            >
+                        </p>
+                    </div>
+
+                    <p>
+                        This is where my own research interests connect. By
+                        formalizing the structure of reasoning—how premises
+                        connect, how arguments flow, how abstractions layer—we
+                        can make the implicit "reward signal" of demonstrations
+                        more stable and generalizable.
+                    </p>
+                </section>
+
+                <!-- Final Synthesis -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">SYNTHESIS</span>
+                        <h2 class="act-title">What We've Discovered</h2>
+                    </div>
+
+                    <p>Let's step back and see what we've uncovered:</p>
+
+                    <div class="synthesis-box">
+                        <h3>The Conceptual Shift</h3>
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th>What We Thought</th>
+                                    <th>What's Actually Happening</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Models learn facts from examples</td>
+                                    <td>Models copy behavioral patterns</td>
+                                </tr>
+                                <tr>
+                                    <td>Examples are mini-training data</td>
+                                    <td>
+                                        Examples are implicit preference signals
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Weights must change for learning</td>
+                                    <td>
+                                        Activations shift within frozen weights
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>More examples = more data</td>
+                                    <td>
+                                        More examples = stronger behavioral
+                                        prior
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Prompting ≠ training</td>
+                                    <td>Prompting ≈ temporary training</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <p><strong>The Core Insight:</strong></p>
+
+                    <p>
+                        Few-shot learning works not because models learn new
+                        knowledge, but because
+                        <strong
+                            >we temporarily bend their reasoning space</strong
+                        >.
+                    </p>
+
+                    <p>
+                        The examples we provide are not data points to memorize.
+                        They are
+                        <strong>behavioral attractors</strong>—temporary
+                        gravitational wells that pull the model's outputs toward
+                        desired patterns.
+                    </p>
+
+                    <div class="killer-quote">
+                        <p>
+                            A prompt is not just input.<br /><span
+                                class="highlight"
+                                >It is a temporary training algorithm.</span
+                            >
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Closing -->
+                <section class="act">
+                    <div class="act-header">
+                        <span class="act-number">CODA</span>
+                        <h2 class="act-title">The Mystery Remains</h2>
+                    </div>
+
+                    <p>Every time you write a few-shot prompt, you are:</p>
+
+                    <ul>
+                        <li>Implicitly defining an objective function</li>
+                        <li>Demonstrating optimal trajectories</li>
+                        <li>Reshaping the model's behavioral landscape</li>
+                        <li>
+                            Running a shadow training process inside a single
+                            forward pass
+                        </li>
+                    </ul>
+
+                    <p>And here's the humbling part:</p>
+
+                    <blockquote>
+                        <p>
+                            The real mystery is not that LLMs can learn from a
+                            few examples... but that we still don't fully
+                            understand what kind of learning is happening at
+                            all.
+                        </p>
+                    </blockquote>
+
+                    <p>
+                        We've built systems that surprise us. That exhibit
+                        capabilities we didn't explicitly program. That blur the
+                        lines between "inference" and "training" in ways we're
+                        only beginning to formalize.
+                    </p>
+
+                    <p>
+                        The next frontier isn't just scaling models. It's
+                        understanding the strange, implicit optimization
+                        processes we've accidentally created—and learning to
+                        design prompts not as inputs, but as
+                        <strong>temporary minds</strong>.
+                    </p>
+                </section>
+
+                <!-- References -->
+                <section class="references">
+                    <h2>References</h2>
+                    <ol>
+                        <li>
+                            Brown, T., Mann, B., Ryder, N., et al. (2020).
+                            "Language Models are Few-Shot Learners."
+                            <em
+                                >Advances in Neural Information Processing
+                                Systems (NeurIPS)</em
+                            >.
+                        </li>
+                        <li>
+                            Wei, J., Wang, X., Schuurmans, D., et al. (2022).
+                            "Chain-of-Thought Prompting Elicits Reasoning in
+                            Large Language Models."
+                            <em
+                                >Advances in Neural Information Processing
+                                Systems (NeurIPS)</em
+                            >.
+                        </li>
+                        <li>
+                            Min, S., Lyu, X., Holtzman, A., et al. (2022).
+                            "Rethinking the Role of Demonstrations: What Makes
+                            In-Context Learning Work?"
+                            <em>Proceedings of EMNLP</em>.
+                        </li>
+                        <li>
+                            von Oswald, J., Niklasson, E., Randazzo, E., et al.
+                            (2023). "Transformers Learn In-Context by Gradient
+                            Descent." <em>Proceedings of ICML</em>.
+                        </li>
+                        <li>
+                            Ouyang, L., Wu, J., Jiang, X., et al. (2022).
+                            "Training Language Models to Follow Instructions
+                            with Human Feedback."
+                            <em
+                                >Advances in Neural Information Processing
+                                Systems (NeurIPS)</em
+                            >.
+                        </li>
+                        <li>
+                            Bian, Y., Pei, J., Liu, T., et al. (2024). "Large
+                            Language Models Are Not Robust Reasoners."
+                            <em>arXiv preprint</em>.
+                        </li>
+                        <li>
+                            Agarwal, R., Vieillard, N., Stanczyk, P., et al.
+                            (2024). "Many-Shot In-Context Learning."
+                            <em>arXiv preprint</em>.
+                        </li>
+                    </ol>
+                </section>
+            </main>
+
+            <a href="index.html" class="back-link">
+                <i class="fas fa-arrow-left"></i>
+                Back to Home
+            </a>
+        </div>
+    </body>
+</html>
